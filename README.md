@@ -26,7 +26,7 @@ Following previous research, to obtain BeerAdvocate, and HotelReview benchmarks 
 
 ## 🚀 Running example
 ### Beer-Aroma
-Aroma: python -u main_bingo.py --dis_lr 1 --hidden_dim 200 --data_type beer --freezing 2 --save 1 --dropout 0.2 --lr 0.0002 --batch_size 128 --gpu 1 --sparsity_percentage 0.1 --sparsity_lambda 1 --continuity_lambda 1 --cls_lambda 1  --epochs 400 --aspect 1 --writer  './results_final/beer_correlated/PORAT/noname1_20'  > ./results_final/BINGO/noname1_20.log	
+Aroma: python -u main_bingo.py --dis_lr 1 --hidden_dim 200 --data_type beer --freezing 2 --save 1 --dropout 0.2 --lr 0.0002 --batch_size 128 --gpu 1 --sparsity_percentage 0.1 --sparsity_lambda 1 --continuity_lambda 1 --cls_lambda 1  --epochs 400 --aspect 1 --writer  './results_final/beer_correlated/PORAT/noname1_10'  > ./results_final/BINGO/noname1_10.log	
 
 📝 **_Notes_**: "--sparsity_percentage 0.1" means "$s=0.1$" in Sec.3 (But the actual sparsity is different from $s$. When you change the random seed, you need to adjust the "sparsity_percentage" according to the actual sparsity on the test set.). "
 --sparsity_lambda 1 --continuity_lambda 1 " means $\lambda_1=11, \lambda_2=12$. BINGO can automatically learn and adapt these constraints.
