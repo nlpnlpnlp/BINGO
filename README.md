@@ -17,8 +17,12 @@ Install packages: pip install -r requirements.txt
 
 ## 📚 Datasets
 Following previous research, to obtain BeerAdvocate, and HotelReview benchmarks which are all publicly available.
-- ✅ BeerAdvocate. 
-- ✅ HotelReview. 
+- ✅ Beer-Apperance. 
+- ✅ Beer-Aroma.
+- ✅ Beer-Palate.
+- ✅ Hotel-Location.
+- ✅ Hotel-Service.
+- ✅ Hotel-Cleanliness.
 
 ## 🚀 Running example
 ### Beer-Aroma
