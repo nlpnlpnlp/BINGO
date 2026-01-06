@@ -1,7 +1,7 @@
 
 aspect=0
 sparsity_percentage=0.1
-optimizer=BINGO_Moll
+optimizer=BINGO
 data_type='beer'
 epochs=400
 gpu=0
