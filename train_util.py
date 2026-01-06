@@ -167,17 +167,8 @@ def train_rnp(model, optimizer, dataset, device, args,epoch):
         elif(args.optimizer=="AdamWSN" or args.optimizer=="AdamWSNG"):
             loss.backward()
             optimizer.step()
-        elif(args.optimizer=="MyAdam"):
-            loss.backward()
-            optimizer.step()
 
-        elif(args.optimizer=="CAGrad"):
-            loss1 = cls_loss
-            loss2 = sparsity_loss
-            loss3 = continuity_loss
 
-            optimizer.backward([loss1, loss2, loss3], retain_graph=True)
-            optimizer.step()
         elif(args.optimizer=="PCGrad"):
 
             loss1 = cls_loss
@@ -186,14 +177,6 @@ def train_rnp(model, optimizer, dataset, device, args,epoch):
 
             optimizer.pc_backward([loss1, loss2, loss3])
             optimizer.step()
-
-        elif(args.optimizer=="NashAdam"):
-            loss1 = cls_loss
-            loss2 = sparsity_loss
-            loss3 = continuity_loss
-            losses = [loss1, loss2, loss3]
-
-            optimizer.step_moo(losses)
 
         else:
             print("Training Exception One")
