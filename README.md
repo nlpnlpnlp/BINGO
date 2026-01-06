@@ -43,7 +43,7 @@ sparsity_lambda=1.0
 continuity_lambda=1.0
 
 
-log_dir=./new_log/$data_type/'spa'$sparsity_percentage/'as'$aspect/$optimizer
+log_dir=./new_log/$data_type/'spa'$sparsity_percentage/'as'$aspect/
 mkdir -p $log_dir
 python -u main_bingo.py --hidden_dim 200 --save 0 --dropout 0.2 --lr 0.0001 \
         --data_type beer --batch_size 128 --gpu $gpu --sparsity_percentage $sparsity_percentage \
