@@ -31,6 +31,27 @@ Following the instructions in the data folder, you can obtain the publicly avail
 ### Beer-Aroma
 Aroma: source run_bingo.sh	
 
+```
+aspect=0
+sparsity_percentage=0.1
+optimizer=BINGO_Moll
+data_type='beer'
+epochs=400
+gpu=0
+cls_lambda=1.0 
+sparsity_lambda=1.0 
+continuity_lambda=1.0
+
+
+log_dir=./new_log/$data_type/'spa'$sparsity_percentage/'as'$aspect/$optimizer
+mkdir -p $log_dir
+python -u main_bingo.py --hidden_dim 200 --save 0 --dropout 0.2 --lr 0.0001 \
+        --data_type beer --batch_size 128 --gpu $gpu --sparsity_percentage $sparsity_percentage \
+        --cls_lambda $cls_lambda --sparsity_lambda $sparsity_lambda --continuity_lambda $continuity_lambda --epochs $epochs --aspect 0 \
+        --optimizer $optimizer \
+        --results_dir $log_dir > $log_dir/cmd1_$sparsity_percentage.log
+```
+
 📝 **_Notes_**: "--sparsity_percentage 0.1" means "$s=0.1$" in Sec.3 (But the actual sparsity is different from $s$. When you change the random seed, you need to adjust the "sparsity_percentage" according to the actual sparsity on the test set.). "
 --sparsity_lambda 1 --continuity_lambda 1" means $\lambda_1=1.0, \lambda_2=1.0$. BINGO can automatically learn and adapt these constraints.
 "--epochs 400" means we run 400 epochs and take the results when the "dev_acc" is best. 
