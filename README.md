@@ -4,7 +4,7 @@ This repository contains code for the paper "BINGO: Balanced-in Gradient Optimiz
 
  
 ## 📘 Overview
-Self-explanation rationalization typically requires a developed model not only to make accurate predictions but also to generate human-understandable rationales (e.g., sparse and coherent), which is often achieved by optimizing multiple constraint terms jointly. However, to learn human-intelligible rationales, (i) some constraint criteria in rationalization models are often non-causally correlated to the target labels; and (ii) different conditional constraints are difficult to coordinate. To address this problem, we propose a novel optimization method (BINGO) for rationalization, which incorporates gradient directional guidance and magnitude scaling to reconcile the multiple objectives between non-causal criteria and causal constraints. Specifically, to address the issue of non-causal correlations in constraints, we propose a conflict-suppressed and causality-augmented gradient update mechanism to guide the learning of gradient direction. Meanwhile, to balance multi-objective constraints, we introduce a dynamic gradient magnitude scaling strategy that resolves inconsistencies among different objectives. Finally, we perform extensive experiments on six widely used rationalization datasets, demonstrating the effectiveness of BINGO and the state-of-the-art performance. 
+Self-explanation rationalization typically requires a developed model not only to make accurate predictions but also to generate human-understandable rationales (e.g., sparse and coherent), which is often achieved by optimizing multiple constraint terms jointly. However, to learn human-intelligible rationales, (i) some constraint criteria in rationalization models are often non-causally correlated to the target labels; and (ii) different conditional constraints are difficult to coordinate. To address this problem, we propose a novel optimization method (BINGO) for rationalization, which incorporates gradient directional guidance and magnitude scaling to reconcile the multiple objectives between non-causal criteria and causal constraints. Specifically, to address the issue of non-causal correlations in constraints, we propose a conflict-suppressed and causality-augmented gradient update mechanism to guide the learning of gradient direction. Meanwhile, to balance multi-objective constraints, we introduce a dynamic gradient magnitude scaling strategy that resolves inconsistencies among different objectives. Finally, we conduct extensive experiments on six widely used rationalization datasets, demonstrating the effectiveness of BINGO and the state-of-the-art performance. 
 
 
 ## 🏗️ Environments
@@ -34,7 +34,7 @@ Aroma: source run_bingo.sh
 ```
 aspect=0
 sparsity_percentage=0.1
-optimizer=BINGO_Moll
+optimizer=BINGO
 data_type='beer'
 epochs=400
 gpu=0
@@ -57,7 +57,7 @@ python -u main_bingo.py --hidden_dim 200 --save 0 --dropout 0.2 --lr 0.0001 \
 "--epochs 400" means we run 400 epochs and take the results when the "dev_acc" is best. 
 
 ## 📊 Results
-You will get the result like "best_dev_epoch=78" at last. Then you need to find the result corresponding to the epoch with number "42".  
+You will get the result like "best_dev_epoch=78" at last. Then you need to find the result corresponding to the epoch with the number "42".  
 For Beer-Palate, you may get a result like: 
 
 Train time for epoch #42 : 
