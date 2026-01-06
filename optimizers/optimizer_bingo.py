@@ -3,6 +3,7 @@ import torch
 from torch.optim import Optimizer
 
 class BINGO:
+    '''We release runnable key components of our experimental code. All code used in the experiments will be fully released upon acceptance.'''
     def __init__(self, optimizer: Optimizer):
         self._optim = optimizer
         self.eps = 1e-10
