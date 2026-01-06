@@ -6,13 +6,13 @@ Following previous research (Huang et al., 2021; Yue et al., 2023; Zhao et al., 
 
 ## benckmarks
 - BeerAdvocate. 
---✅ Beer-Apperance. 
---✅ Beer-Aroma.
---✅ Beer-Palate.
+-- ✅ Beer-Apperance. 
+-- ✅ Beer-Aroma.
+-- ✅ Beer-Palate.
 - HotelReview. 
---✅ Hotel-Location.
---✅ Hotel-Service.
---✅ Hotel-Cleanliness.
+-- ✅ Hotel-Location.
+-- ✅ Hotel-Service.
+-- ✅ Hotel-Cleanliness.
 
 
 BeerAdvocate and HotelReview are publicly available from existing work (Huang et al., 2021; Yue et al., 2023; Zhao et al., 2024; Liu et al., 2025).
