@@ -53,12 +53,12 @@ python -u main_bingo.py --hidden_dim 200 --save 0 --dropout 0.2 --lr 0.0001 \
 ```
 
 📝 **_Notes_**: "--sparsity_percentage 0.1" means "$s=0.1$" in Sec.3 (But the actual sparsity is different from $s$. When you change the random seed, you need to adjust the "sparsity_percentage" according to the actual sparsity on the test set.). "
---sparsity_lambda 1 --continuity_lambda 1" means $\lambda_1=1.0, \lambda_2=1.0$. BINGO can automatically learn and adapt these constraints.
+--sparsity_lambda 1.0 --continuity_lambda 1.0" means $\lambda_1=1.0, \lambda_2=1.0$. BINGO can automatically learn and adapt these constraints.
 "--epochs 400" means we run 400 epochs and take the results when the "dev_acc" is best. 
 
 ## 📊 Results
-You will get the result like "best_dev_epoch=78" at last. Then you need to find the result corresponding to the epoch with the number "42".  
-For Beer-Palate, you may get a result like: 
+You will get the result like "best_dev_epoch=42" at last. Then you need to find the result corresponding to the epoch with the number "42".  
+For Beer-Aroma, you may get a result like: 
 
 Train time for epoch #42 : 
 gen_lr=0.0001, pred_lr=0.0001
