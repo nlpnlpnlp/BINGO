@@ -20,7 +20,7 @@ Install packages: pip install -r requirements.txt
 ## 📚 Datasets
 Following the instructions in the data folder, you can obtain the publicly available BeerAdvocate and HotelReview benchmarks.
 
-- ✅ Beer-Apperance. 
+- ✅ Beer-Appearance. 
 - ✅ Beer-Aroma.
 - ✅ Beer-Palate.
 - ✅ Hotel-Location.
@@ -28,7 +28,7 @@ Following the instructions in the data folder, you can obtain the publicly avail
 - ✅ Hotel-Cleanliness.
 
 ## 🚀 Running example
-### Beer-Aroma
+### Beer-Appearance
 Aroma: source run_bingo.sh	
 
 ```
