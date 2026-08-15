@@ -65,6 +65,7 @@ python -u main_bingo.py --hidden_dim 200 --save 0 --dropout 0.2 --lr 0.0001 \
 
 **The previous version of our README contained a typo regarding adjusting “sparsity_percentage,” as we copied the wording from an earlier template. We have now corrected and updated the description accordingly.**
 
+**The hyperparameter files for all optimizers have been included.**
 
 ## 📊 Results
 You will get the result like "best_dev_epoch=42" at last. Then you need to find the result corresponding to the epoch with the number "42".  
