@@ -65,8 +65,6 @@ python -u main_bingo.py --hidden_dim 200 --save 0 --dropout 0.2 --lr 0.0001 \
 
 📝 **_Notes_**: "--sparsity_percentage 0.1" means "$s=0.1$" in Sec.3 (However, the actual sparsity may differ from $s$. When changing the random seed, **we do not adjust “sparsity_percentage” based on test-set sparsity, as BINGO is designed to adaptively balance different objectives.**). 
 "--sparsity_lambda 1.0 --continuity_lambda 1.0" means $\lambda_1=\lambda_2=1.0$. We also set the prediction-loss weight --cls_lambda 1.0 for all optimizers to ensure a fair comparison. **All optimizers are thus encouraged to automatically learn and adapt to these constraints.**
-"--epochs 400" means we run 400 epochs and take the results when the "dev_acc" is best. 
-
 
 ## 📊 Results
 You will get the result like "best_dev_epoch=42" at last. Then you need to find the result corresponding to the epoch with the number "42".  
