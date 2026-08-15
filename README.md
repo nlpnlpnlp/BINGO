@@ -1,10 +1,9 @@
 # 🧩 Mitigating the Rationale-Prediction Conflict for Data-Centric Rationalization
 
-[![Paper Status](https://img.shields.io/badge/Status-ICDE--2027--Submission-orange)](https://github.com/)
 [![Python](https://img.shields.io/badge/Python-3.9.0-blue)](https://www.python.org/)
 [![CUDA](https://img.shields.io/badge/CUDA-12.1-green)](https://developer.nvidia.com/cuda-toolkit)
 
-This repository contains code for the paper "Mitigating the Rationale-Prediction Conflict for Data-Centric Rationalization". We release the key code and data instructions in experiments for reviewing and reproduction. We will release all the code used in experiments upon acceptance. This work has been submitted to the IEEE for possible publication.
+This repository contains code for the paper "Mitigating the Rationale-Prediction Conflict for Data-Centric Rationalization". We release the key code and data instructions in experiments for reviewing and reproduction. We will release all the code used in experiments upon acceptance. 
 
 
 **[New] The previous version of our README contained a typo regarding adjusting “sparsity_percentage,” as we copied the wording from an earlier template. We have now corrected and updated the description accordingly.**
