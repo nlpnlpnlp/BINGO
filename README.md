@@ -63,6 +63,9 @@ python -u main_bingo.py --hidden_dim 200 --save 0 --dropout 0.2 --lr 0.0001 \
 --sparsity_lambda 1.0 --continuity_lambda 1.0" means $\lambda_1=1.0, \lambda_2=1.0$. BINGO can automatically learn and adapt these constraints.
 "--epochs 400" means we run 400 epochs and take the results when the "dev_acc" is best. 
 
+**The previous version of our README contained a typo regarding adjusting “sparsity_percentage,” as we copied the wording from an earlier template. We have now corrected and updated the description accordingly.**
+
+
 ## 📊 Results
 You will get the result like "best_dev_epoch=42" at last. Then you need to find the result corresponding to the epoch with the number "42".  
 For Beer-Aroma, you may get a result like: 
