@@ -6,6 +6,11 @@
 
 This repository contains code for the paper "Mitigating the Rationale-Prediction Conflict for Data-Centric Rationalization". We release the key code and data instructions in experiments for reviewing and reproduction. We will release all the code used in experiments upon acceptance. This work has been submitted to the IEEE for possible publication.
 
+
+**[New] The previous version of our README contained a typo regarding adjusting “sparsity_percentage,” as we copied the wording from an earlier template. We have now corrected and updated the description accordingly.**
+
+**[New] The hyperparameter files for all optimizers have been included.**
+
  
 ## 📘 Overview
 Rationalization empowers deep learning models with self-explaining capabilities from a data-centric perspective, where an explainer generate a semantically consistent subset of the input data as rationales, and a subsequent predictor makes predictions based on the generated rationales. Despite significant advancements, the dynamic learning process involving both rationales and predictions remains a major bottleneck in practical applications. In this paper, we first identify the rationale–prediction conflict in rationalization. We further investigate its underlying mechanism during the dynamic learning process through theoretical analysis and validate our findings empirically from the perspective of gradient components. Based on this, we propose a novel optimization method **BINGO** (**B**alance **IN** **G**radient **O**ptimization) for rationalization, which incorporates dependency-aware directional guidance and adaptive magnitude scaling from a gradient optimization perspective to mitigate the imbalance underlying the rationale–prediction conflict. In particular, theoretical insights based on a geometric toy example demonstrate the soundness of the proposed method. Experiments on six widely used datasets show that BINGO not only improves predictive accuracy but also enhances rationale quality, achieving gains of up to 7.4\% over previous state-of-the-art methods. Additionally, extensive experimental analyses provide additional evidence of its effectiveness in rationalization under dynamic learning settings.
@@ -63,9 +68,6 @@ python -u main_bingo.py --hidden_dim 200 --save 0 --dropout 0.2 --lr 0.0001 \
 --sparsity_lambda 1.0 --continuity_lambda 1.0" means $\lambda_1=1.0, \lambda_2=1.0$. BINGO can automatically learn and adapt these constraints.
 "--epochs 400" means we run 400 epochs and take the results when the "dev_acc" is best. 
 
-**The previous version of our README contained a typo regarding adjusting “sparsity_percentage,” as we copied the wording from an earlier template. We have now corrected and updated the description accordingly.**
-
-**The hyperparameter files for all optimizers have been included.**
 
 ## 📊 Results
 You will get the result like "best_dev_epoch=42" at last. Then you need to find the result corresponding to the epoch with the number "42".  
